@@ -1,0 +1,22 @@
+{
+  "name": "windcave-mock-server",
+  "version": "1.0.0",
+  "description": "",
+  "module": "server.mjs",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "ENDPOINT=\"http://127.0.0.1:2999\" node server.mjs"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.27.2",
+    "express": "^4.18.1",
+    "express-validator": "^6.14.2"
+  },
+  "devDependencies": {
+    "cors": "^2.8.5"
+  }
+}

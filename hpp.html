@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sample Site</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <style>
+    body { padding-top: 50px; }
+  </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1><a id="success" href="javascript:window.location.href = 'payment/success' + window.location.search">Click for Successful transaction</a></h1>
+        </div>
+        <div class="jumbotron">
+            <h1><a id="fail" href="javascript:window.location.href = 'payment/fail' + window.location.search">Click for failed transaction</a></h1>
+        </div>
+    </div>
+    
+</body>
+</html>
