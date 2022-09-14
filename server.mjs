@@ -83,7 +83,7 @@ app.get('/payment/fail', async function (req, res) {
   try {
     const sessionId = req.query.sessionId;
 
-    sessions[sessionId].state = 'complete';
+    sessions[sessionId].state = 'declined';
     sessions[sessionId].transactions = [getTransaction(sessionId, false)];
 
     try {
@@ -105,7 +105,7 @@ app.get('/payment/success', async function (req, res) {
   try {
     const sessionId = req.query.sessionId;
 
-    sessions[sessionId].state = 'declined';
+    sessions[sessionId].state = 'complete';
     sessions[sessionId].transactions = [getTransaction(sessionId, true)];
 
     await axios.get(sessions[sessionId].request.notificationUrl + '?sessionId=' + sessionId);
